@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장학정보 및 기숙사 정보</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #1e90ff;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container button {
+            background-color: #1e90ff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        /* 반응형 웹 디자인 추가 */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .button-container button {
+                width: 100%;
+                padding: 15px;
+                font-size: 18px;
+                margin: 5px 0;
+            }
+
+            h1, h2 {
+                font-size: 1.5em;
+            }
+
+            ul li {
+                font-size: 1.2em;
+            }
+
+            .section {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <button onclick="showSection('section1')">장학 정보</button>
+            <button onclick="showSection('section2')">기숙사 정보</button>
+        </div>
+
+        <div id="section1" class="section">
+            <h1><a href="https://www.gachon.ac.kr/kor/1146/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa29yJTJGNDc4JTJGYXJ0Y2xMaXN0LmRvJTNG">장학 정보</a></h1>
+            <ul>
+                <h3><li>2024. 05. 31 - 2024-1학기 하계방학 계속근로 유지 여부 조사</li></h3>
+                <h3><li>2024. 05. 31 - (학비보조)2024학년도 제3기 산학협동재단 디딤돌 장학생 선발 안내(신입생)</li></h3>
+                <h3><li>2024. 05. 29 - 2024-2025 불가리아 정부초청 장학생 선발 안내</li></h3>
+                <h3><li>2024. 05. 23 - 24-1학기 국가근로 하계방학 집중근로 프로그램 신청 안내</li></h3>
+                <h3><li>2024. 05. 22 - 2024-2025 이탈리아 정부초청 장학생 선발 안내</li></h3>
+                <h3><li>2024. 05. 22 - (생활비)2024학년도 하이트진로 장학생 선발 안내</li></h3>
+                <h3><li>2024. 05. 21 - 2024학년도 2학기 국가근로장학금 1차 학생신청 기간 안내</li></h3>
+                <h3><li>2024. 05. 20 - 2024-1학기 교내 및 교외 국가근로장학생 추가 4차 모집 선발 안내 [공학교육혁신센터]</li></h3>
+                <h3><li>2024. 05. 17 - 2024-1학기 장학사정관(릴레이쉽) 장학금 신청 안내</li></h3>
+                <h3><li>2024. 05. 16 - 롯데장학재단 6기 취업준비생 장학생 모집 안내</li></h3>
+            </ul>
+        </div>
+
+        <div id="section2" class="section">
+            <h2>기숙사 정보</h2>
+            <ul>
+                <h3><li>개문시간: AM 05:00</li> </h3>
+                <h3><li>폐문시간: AM 01:00</li></h3>
+                <h3><li>출입호실 카드키: 출입카드는 항상 휴대하여야 합니다. 분실 시에는 즉시 B1층 여자동에 있는 사감실로 신고하고 재발급 받아야 합니다. (재발급 비용 5,000원 본인부담) 타인에게 절대 대여하거나 양도를 금합니다.</li></h3>
+                <h3><li>점호: 월 1회 이상 정기점검 및 불시점검을 수시로 실시합니다.</li> </h3>
+                <h3><li>호실 청소: 본인이 사용하는 호실은 항상 깨끗이 청소해야 합니다. 퇴사 시에도 반드시 청소를 한 후 퇴사해야 합니다.</li></h3>
+                <h3><li>호실 내 스티커/부착물 절대금지: 출입문, 벽, 옷장, 책상 등에 각종 스티커나 부착(광고)들을 부착해서는 안 됩니다. 부착 시 본인이 직접 제거하고 벽지 훼손 시 소정의 보수비용을 부담해야 합니다.</li></h3>
+                <h3><li>시설물 및 비품사용 및 고장 신고: 시설물이나 비품에 고장이나 이상이 발생할 경우 즉시 사감실로 신고하여 조치받아야 합니다. 외출 시에는 반드시 전등과 전기기구,
+                </ul>
+            </div>
+        </div>
+    
+        <script>
+            function showSection(sectionId) {
+                // 모든 섹션을 숨기기
+                var sections = document.querySelectorAll('.section');
+                sections.forEach(function(section) {
+                    section.classList.remove('active');
+                });
+    
+                // 선택된 섹션을 보이기
+                var selectedSection = document.getElementById(sectionId);
+                selectedSection.classList.add('active');
+            }
+        </script>
+    </body>
+    </html>
