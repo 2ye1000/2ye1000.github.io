@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>학교 주변 맛집 추천</title>
+<title>💕학교 주변 맛집 추천💕</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 <style>
   /* 기본 스타일 */
@@ -12,6 +12,21 @@
     margin: 0;
     padding: 0;
     background-color: #f0f8ff; /* 약한 파란색 배경 */
+  }
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px ;
+    font-size: 16px;
+    color: #fff; /* 글자색 */
+    background-color: #007bff; /* 배경색 */
+    border-radius: 5px;
+    text-decoration: none; /* 밑줄 제거 */
+    transition: background-color 0.3s ease-in-out; /* 호버 애니메이션 */
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3; /* 호버 시 색상 변경 */
   }
   .container {
     max-width: 800px;
@@ -45,7 +60,7 @@
   .map-container iframe {
     width: 100%; 
     height: 100%;
-    border: 0;
+    border: 1;
   }
 
   /* 반응형 디자인 */
@@ -75,6 +90,7 @@
 </style>
 </head>
 <body>
+  <a href="index.html" class="back-button">메인으로</a>
 
 <div class="container">
   <h1>학교 주변 맛집 추천</h1>
@@ -111,3 +127,4 @@
 
 </body>
 </html>
+https://maps.app.goo.gl/uzrSb5LB1jVVCpxw8
