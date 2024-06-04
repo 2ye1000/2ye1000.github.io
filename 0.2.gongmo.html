@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공모전 찾기</title>
+    <title>🤓공모전 찾기🤓</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -18,6 +18,25 @@
             padding: 20px;
             background-color: #007bff; /* 헤더 배경색을 파란색으로 변경 */
             color: #fff; /* 헤더 글자색을 흰색으로 변경 */
+            position: relative; /* 버튼을 위한 상대 위치 지정 */
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3; /* 호버 상태에서의 배경색 변경 */
         }
 
         .section {
@@ -82,6 +101,7 @@
 </head>
 <body>
     <header>
+        <a href="index.html" class="back-button">메인 페이지</a>
         <h1>공모전 찾기</h1>
     </header>
 
