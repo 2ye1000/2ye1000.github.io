@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>스터디그룹 만들기</title>
+<title>😯스터디그룹 만들기😯</title>
 <style>
   /* 기본 스타일 */
   body {
@@ -20,6 +20,7 @@
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
   }
   h2 {
     color: #007bff;
@@ -66,13 +67,32 @@
   }
   .form-group button:hover {
     background-color: #0056b3;
-    
+  }
+  /* 돌아가기 버튼 스타일 */
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .back-button:hover {
+    background-color: #0056b3;
   }
 </style>
 </head>
 <body>
 
 <div class="container">
+  <a href="0.4.1.studygroup.html" class="back-button">이전으로</a>
   <h2>스터디그룹 만들기</h2>
   <form action="#">
     <div class="form-group">
