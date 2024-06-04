@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>강의 후기</title>
+    <title>🎞️강의 후기🎞️</title>
     <style>
         /* 스타일링을 위한 CSS */
         body {
@@ -21,6 +21,20 @@
             background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+        }
+        #backButton {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #backButton:hover {
+            background-color: #0056b3;
         }
         #searchInput {
             width: 100%;
@@ -88,6 +102,8 @@
 </head>
 <body>
 
+<button id="backButton" onclick="window.location.href='index.html'">메인 페이지</button>
+
 <div id="container">
     <!-- 검색 창 -->
     <input type="text" id="searchInput" placeholder="강의를 검색하세요">
@@ -137,25 +153,4 @@
 
 <script>
     // 검색을 처리하는 함수
-    function search() {
-        var input = document.getElementById('searchInput').value.toLowerCase();
-        var boxes = document.getElementsByClassName('courseBox');
-        
-        for (var i = 0; i < boxes.length; i++) {
-            var courseName = boxes[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
-            
-            // 검색어가 강의명에 포함되면 해당 섹션을 표시하고, 포함되지 않으면 숨김
-            if (courseName.includes(input)) {
-                boxes[i].style.display = 'block';
-            } else {
-                boxes[i].style.display = 'none';
-            }
-        }
-    }
-
-    // 검색 창의 입력값이 변경될 때마다 검색 함수 호출
-    document.getElementById('searchInput').addEventListener('input', search);
-</script>
-
-</body>
-</html>
+   
