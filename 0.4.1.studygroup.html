@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>스터디그룹 모집</title>
+<title>😗스터디그룹 모집😗</title>
 <style>
   /* 기본 스타일 */
   body {
@@ -55,6 +55,26 @@
     background-color: #0056b3;
   }
 
+  /* 새로운 index로 돌아가는 버튼 스타일 */
+  .back-to-index {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  .back-to-index button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .back-to-index button:hover {
+    background-color: #0056b3;
+  }
+
   /* 반응형 스타일 */
   @media (max-width: 768px) {
     .container {
@@ -66,6 +86,14 @@
       right: 10px;
     }
     .create-group button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+    .back-to-index {
+      top: 10px;
+      left: 10px;
+    }
+    .back-to-index button {
       padding: 8px 16px;
       font-size: 14px;
     }
@@ -81,6 +109,14 @@
       right: 5px;
     }
     .create-group button {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+    .back-to-index {
+      top: 5px;
+      left: 5px;
+    }
+    .back-to-index button {
       padding: 6px 12px;
       font-size: 12px;
     }
@@ -133,6 +169,10 @@
 
 <div class="create-group">
   <a href="0.4.2.studygroup-1.html"><button>스터디그룹 만들기</button></a>
+</div>
+
+<div class="back-to-index">
+  <a href="index.html"><button>메인 페이지</button></a>
 </div>
 
 </body>
