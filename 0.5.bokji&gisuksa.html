@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>장학정보 및 기숙사 정보</title>
+    <title>🦐장학정보 및 기숙사 정보🦐</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -90,9 +89,28 @@
                 padding: 10px;
             }
         }
+
+        /* index.html로 돌아가는 버튼 스타일 */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
     </style>
 </head>
 <body>
+    <a href="index.html" class="back-button">메인으로</a>
     <div class="container">
         <div class="button-container">
             <button onclick="showSection('section1')">장학 정보</button>
